@@ -15,8 +15,8 @@ int main(void)
 		if (alphabet != 101 && alphabet != 113)
 		{
 			putchar(alphabet);
-			alphabet++;
 		}
+		alphabet++;
 	}
 	putchar('\n');
 
