@@ -17,7 +17,7 @@ int main(void)
 		putchar(alphabet); /* Affiche le caractère */
 		alphabet++;        /* Passe au caractère suivant */
 	}
-	
+
 
 	alphabet = 65; /* Initialise avec le code ASCII de 'A' */
 	while (alphabet <= 90) /* Tant que c'est une lettre majuscule */
