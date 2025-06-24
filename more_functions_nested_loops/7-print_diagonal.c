@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_square - Prints a square using '#' characters.
+ * @size: The size of the square.
  *
- * Return: Always 0.
+ * Return: Always 0. (Note: The function is void, so no return value needed for the function itself,
+ * but if it were main, it would return 0).
  */
 void print_diagonal(int n)
 {
