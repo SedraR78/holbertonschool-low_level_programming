@@ -3,21 +3,23 @@
 int main ()
 {
     int num=1 ; 
-    for ( num = 0; num < 101; num++)
-    {
-        if (num == 3)
+    for ( num = 1; num < 101; num++)
+    {   
+
+        if (num % 3 == 0 && num % 5 == 0)
+        {
+            printf("FizzBuzz");
+            printf(" ");
+        }
+
+        else if (num % 3 == 0 )
         {
             printf("Fizz");
             printf(" ");
         }
-        else if (num == 5)
+        else if (num % 5  == 0)
         {
             printf("Buzz");
-            printf(" ");
-        }
-        else if (num % 3 == 0 && num % 5 == 0)
-        {
-            printf("FizzBuzz");
             printf(" ");
         }
         else
