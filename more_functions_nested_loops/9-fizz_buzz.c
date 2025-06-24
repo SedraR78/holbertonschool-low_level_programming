@@ -18,7 +18,7 @@ int main ()
         }
         else if (num == 100)
         {
-            printf("Buzz");
+            printf("Buzz");    
         }
         else if (num % 5  == 0)
         {
@@ -30,6 +30,7 @@ int main ()
             printf("%d", num);
             printf(" ");
         }  
-    }
+     }
+      printf("\n");
     return(0) ;
 }
