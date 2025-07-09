@@ -17,8 +17,14 @@ if ((s2 == NULL))
 {
    s2= "";
 }
-    s1_taille = strlen(s1);
-    s2_taille = strlen(s2);
+     while (s1[s1_longueur] != '\0')
+    {
+        s1_longueur++;
+    }
+     while (s2[s2_longueur] != '\0')
+    {
+        s2_longueur++;
+    }
 
     taille = s1_taille + s2_taille + 1;
     s = malloc(taille * sizeof(char));
