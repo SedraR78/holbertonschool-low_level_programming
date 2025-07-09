@@ -17,13 +17,13 @@ if ((s2 == NULL))
 {
    s2= "";
 }
-     while (s1[s1_longueur] != '\0')
+     while (s1[s1_taille] != '\0')
     {
-        s1_longueur++;
+        s1_taille++;
     }
-     while (s2[s2_longueur] != '\0')
+     while (s2[s2_taille] != '\0')
     {
-        s2_longueur++;
+        s2_taille++;
     }
 
     taille = s1_taille + s2_taille + 1;
