@@ -3,5 +3,6 @@
         "stdio.h": "c",
         "main.h": "c",
         "2-main.C": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
