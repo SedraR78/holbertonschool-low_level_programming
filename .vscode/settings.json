@@ -2,7 +2,8 @@
     "files.associations": {
         "stdio.h": "c",
         "main.h": "c",
-        "2-main.C": "cpp"
+        "2-main.C": "cpp",
+        "dog.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
