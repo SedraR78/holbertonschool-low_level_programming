@@ -1,22 +1,23 @@
-#include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
-
-
+/**
+ * free_grid - frees a previously created 2d grid
+ *
+ * @grid: 2d grid to free
+ * @height: height of grid
+ * Return: void
+ */
 void free_grid(int **grid, int height)
 {
-    if (grid == NULL)
-    {
-        return(0);
-    }
-    
-    for (int h= 0; h < height-1; h++)
-    {
-        if(grid[h] == NULL)
-        {
-            free(grid[h]);
+	int i;
 
-        }
-    }
-    free(grid);
+	if (grid != NULL && height != 0)
+	{
+		for (i = 0; i < height; i++)
+		{
+			free(grid[i]);
+		}
+		free(grid);
+	}
 }
