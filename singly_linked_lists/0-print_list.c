@@ -18,14 +18,14 @@ size_t print_list(const list_t *h)
 
     while (current_node != NULL)
     {
-        // VÉRIFIEZ BIEN CETTE CONDITION !
-        if (current_node->str == NULL) // Si le pointeur str est NULL...
+         /* VÉRIFIEZ BIEN CETTE CONDITION ! */
+        if (current_node->str == NULL)  /* Si le pointeur str est NULL... */
         {
-            printf("[0] (nil)\n"); // ...alors j'affiche ça.
+            printf("[0] (nil)\n");  /* ...alors j'affiche ça. */
         }
-        else // Sinon (si le pointeur str n'est PAS NULL)...
+        else  /* Sinon (si le pointeur str n'est PAS NULL)... */
         {
-            printf("[%u] %s\n", current_node->len, current_node->str); // ...j'essaie d'afficher la chaîne.
+            printf("[%u] %s\n", current_node->len, current_node->str);  /* ...j'essaie d'afficher la chaîne. */
         }
         count++;
         current_node = current_node->next;
