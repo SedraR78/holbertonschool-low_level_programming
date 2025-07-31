@@ -1,8 +1,7 @@
-
 #include <stdio.h>
 #include "lists.h" 
 /**
- * print_list - Affiche tous les éléments (nœuds) d'une liste chaînée simple (list_t).
+ * p    e simple (list_t).
  * @h: Un pointeur constant vers la tête (head) de la liste.
  * 'const' indique que la fonction ne modifiera pas la liste.
  * 'list_t *' est le type du pointeur vers un nœud de la liste.
@@ -18,12 +17,12 @@ size_t print_list(const list_t *h)
 
     while (current_node != NULL)
     {
-         /* VÉRIFIEZ BIEN CETTE CONDITION ! */
-        if (current_node->str == NULL)  /* Si le pointeur str est NULL... */
+                                                                
+        if (current_node->str == NULL)    /* equals to if (h-> str  == NULL ) */                       /* Si le pointeur str est NULL... */
         {
-            printf("[0] (nil)\n");  /* ...alors j'affiche ça. */
+            printf("[0] (nil)\n");                              /* ...alors j'affiche ça. */
         }
-        else  /* Sinon (si le pointeur str n'est PAS NULL)... */
+        else                                                     /* Sinon (si le pointeur str n'est PAS NULL)... */
         {
             printf("[%u] %s\n", current_node->len, current_node->str);  /* ...j'essaie d'afficher la chaîne. */
         }
@@ -32,3 +31,23 @@ size_t print_list(const list_t *h)
     }
     return (count);
 }
+
+
+/* size_t print_list(const list_t *h){
+     int i; 
+
+     if (h == NULL)
+        retun (0) ;
+
+    for (i=1; h->next != NULL; i++)
+    {
+        if (h->str == NULL);
+            printf("[%u] %s\n", h->len, "(nil)");
+        else{
+            printf("[%u] %s\n", h->len, h->str);
+        }
+        h = h->next; 
+    }
+    printf("[%u] %s\n", h->len, "(nil)");
+    return (i);
+} */
