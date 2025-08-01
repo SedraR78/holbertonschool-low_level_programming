@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <string.h>
+
 /**
  * main - prints the number the elements of a linked list
  * @h: linked list of type listint_t to print
