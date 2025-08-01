@@ -23,7 +23,7 @@ typedef struct dlistint_s
 size_t print_dlistint(const dlistint_t *h);
 size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_nodeint(dlistint_t **head, const int n);
-dlistint_t *add_nodeint_end(dlistint_t **head, const int n);
+dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 void free_listint(dlistint_t *head);
 void free_listint2(dlistint_t **head);
 int pop_listint(dlistint_t **head);
